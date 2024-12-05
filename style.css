@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif;
+    
+}
+
+body {
+    background-image: url(bg.jpg);
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+}
+
+.logo{
+    font-size: 25px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+
+.navbar a:hover{
+    color: blueviolet;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+}
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 15px;
+}
+.navbar a.active {
+    border-bottom: 2px solid #fff;
+}
+.hero {
+    background-image: url('coffee-hero.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+.hero h1 {
+    font-size: 70px;
+    margin: 0;
+}
+.hero p {
+    font-size: 27px;
+}
+.cta-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #f90;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    text-decoration: none;
+}
+.cta-button:hover {
+    background-color: #e80;
+}
+.social-links {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+.social-links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+    font-size: 20px;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 16px;
+}
+.about-section {
+    padding: 50px 200px;
+    background-color: #f9f9f9;
+    text-align: center;
+    font-size: 23px;
+}
+.menu-section {
+    padding: 50px 50px;
+    background-color: #fff;
+    text-align: center; 
+    font-size: 23px;
+}
+
+.menu-item {
+    display: inline-block;
+    margin-bottom: 30px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px; 
+}
+
+.menu-item img {
+    width: 100%; 
+    height: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.menu-details {
+    padding: 20px;
+    position: relative; 
+}
+
+.menu-details h3 {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.drink-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.drink-names {
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+.prices {
+    margin-top: 10px;
+    font-size: 22px;
+}
+
+.drink-info p {
+    margin: 0;
+}
+
+.chatbot-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #f90;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.chatbot-button img {
+    width: 40px;
+    height: 40px;
+}
+
+.chatbot-container {
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    z-index: 99;
+    height: 0; 
+    width: 300px;
+    max-height: 400px; 
+}
+
+.chatbot-container.open {
+    height: 400px; 
+}
+
+.chatbot-header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.chatbot-body {
+    padding: 10px;
+    max-height: 300px; 
+    overflow-y: auto;
+}
+
+.chatbot-input {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+.chatbot-input input[type="text"] {
+    flex: 1;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.chatbot-input button {
+    padding: 8px 15px;
+    background-color: #f90;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 10px;
+    outline: none;
+}
+
+.chatbot-input button:hover {
+    background-color: #e80;
+}
